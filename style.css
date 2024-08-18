@@ -11,7 +11,6 @@
 }
 
 html {
-  /* background-color: var(--dark); */
   background-image: url('quiz-pattern-big.jpg');
   background-size: 120%;
   font-family: "Montserrat", sans-serif;
@@ -22,10 +21,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-h1 {
-  margin-top: 0;
 }
 
 p, h3 {
@@ -110,10 +105,9 @@ input {
 }
 
 #app {
-  /* background-color: var(--light-blue); */
   background: rgb(130,146,156);
   background: radial-gradient(circle, rgba(130,146,156,1) 14%, rgba(157,178,191,1) 100%); 
-  /* box-shadow: 5px 5px 0 var(--yellow); */
+}
 
 #logo {
   width: 12rem;
@@ -208,13 +202,9 @@ input {
 }
 
 
-@media only screen and (min-width: 768px) {
+@media all and (min-width: 768px) {
   .app {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 25rem;
-    padding: 1.5rem 1rem;
   }
 }
+
