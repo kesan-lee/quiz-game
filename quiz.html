@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app" class="app">
+      <img id="logo" src="logo transp.png">
+      <form id="start-menu">
+        <label for="player-name">Enter your name:</label>
+        <input type="text" id="player-name" required>
+        <label for="questions-number-input">Number of questions:</label>
+        <input type="number" max="50" min="0" value="10" id="questions-number-input">
+        <label for="category-select">Select a category:</label>
+        <select id="category-select">
+          <option id="0" name="any-category" value="0">Any Category</option>
+        </select>
+        <label for="difficulty-to-select">Select a difficulty:</label>
+        <select id="difficulty-to-select">
+          <option value="none">Any difficulty</option>
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+        <button id="start-button" type="button">Start</button>
+      </form>
+      <div id="game" class="app">
+      </div>
+      <section id="score-section" class="app">
+        <h2 class="score-style-class">Scores</h2>
+        <table>
+          <tbody id="score-board">
+          </tbody>
+        </table>
+        <button id="delete-scores-btn">Delete scores</button>
+      </section>
+      <section id="current-player-score-section">
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
