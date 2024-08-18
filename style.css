@@ -38,7 +38,7 @@ p, h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 25rem;
+  width: 20rem;
   padding: 1.5rem 1rem;
 }
 
@@ -205,4 +205,16 @@ input {
   background-color: #ED4337;
   box-shadow: none;
   border-radius: .2rem;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    padding: 1.5rem 1rem;
+  }
 }
